@@ -11,7 +11,7 @@ $password = htmlspecialchars($_GET['pass']);
 
 include_once "configuracao.php";
 $connection = mysqli_connect($host,$usuario,$pass,$dbname) or die (mysql_errno().": ".mysql_error()."<BR>");
-$query ="INSERT INTO Register ( user,surname,phone,mail,pass)
+$query ="INSERT INTO Register ( name,surname,phone,mail,password)
 VALUES('".$user."','".$surname."','".$phone."','".$mail."','".$password."' ) ";
 echo $query;
 mysqli_query ($connection, $query) or die('Erro ao salvar');
