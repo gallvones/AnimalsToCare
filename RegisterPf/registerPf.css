@@ -1,19 +1,52 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+*{
+    border-style: none;
 }
-
 .container {
+    width: 80%; /* Largura do container */
+    max-width: 400px; /* Largura máxima do container */
+    margin: auto; /* Centraliza o container na tela */
+    border: 2px solid #ccc;
+    border-radius: 50px; /* Adiciona uma borda de 2px sólida cinza */
+    padding: 20px; /* Espaçamento interno do container */
+    box-sizing: border-box; /* Faz com que o padding seja incluído na largura total */
+    text-align: center; /* Centraliza o conteúdo dentro do container */
+    position: absolute; /* Permite centralizar verticalmente */
+    top: 50%; /* Move o container para 50% da altura da tela */
+    left: 50%; /* Move o container para 50% da largura da tela */
+    transform: translate(-50%, -50%); /* Corrige o posicionamento para centralizar */
+}
+    
+
+.container form {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 80%;
 }
 
-form {
-    width: 300px; /* Largura do formulário */
-    padding: 5%;
+.container input {
     border: 2px solid #ccc;
-    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    
 }
+
+#button {
+    background-color: white ;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 8px; 
+    color: rgb(120, 117, 117);
+    
+    
+}
+
+#button:hover{
+    background-color: rgb(251, 110, 23);
+}
+
