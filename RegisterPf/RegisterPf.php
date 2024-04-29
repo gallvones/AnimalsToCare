@@ -16,8 +16,5 @@ VALUES('".$user."','".$surname."','".$phone."','".$mail."','".$password."' ) ";
 echo $query;
 mysqli_query ($connection, $query) or die('Erro ao salvar');
 
-echo "<br/>";
-
-echo " SALVO - Nome: ".$user." | CPF: ".$surname." | ";
 ?>
 
